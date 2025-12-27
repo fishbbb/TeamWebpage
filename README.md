@@ -23,17 +23,21 @@ View your app in AI Studio: https://ai.studio/apps/drive/1TjcIg-QZb42RBCNmZ8z8j_
 
 项目已配置好 GitHub Pages 自动部署。按照以下步骤操作：
 
-1. **启用 GitHub Pages**：
-   - 前往仓库的 Settings → Pages
-   - Source 选择 "GitHub Actions"
-   - 保存设置
+1. **首次启用 GitHub Pages**（只需操作一次）：
+   - 前往仓库：https://github.com/fishbbb/TeamWebpage
+   - 点击 **Settings** → **Pages**
+   - 在 **Source** 部分，选择 **Deploy from a branch**
+   - Branch 选择 **gh-pages**，文件夹选择 **/ (root)**
+   - 点击 **Save**
 
 2. **推送代码**：
    - 将所有更改提交并推送到 `main` 分支
-   - GitHub Actions 会自动构建并部署项目
+   - GitHub Actions 会自动构建并部署到 `gh-pages` 分支
 
 3. **访问网站**：
-   - 部署完成后，网站将在以下地址可用：
+   - 部署完成后（通常在 1-2 分钟内），网站将在以下地址可用：
    - `https://fishbbb.github.io/TeamWebpage/`
 
-**注意**：首次部署可能需要几分钟时间。后续每次推送到 `main` 分支都会自动触发重新部署。
+**注意**：
+- 首次部署后，后续每次推送到 `main` 分支都会自动触发重新部署
+- 如果遇到 404 错误，请等待几分钟让 GitHub Pages 完成首次部署
